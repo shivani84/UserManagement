@@ -1,0 +1,49 @@
+<div class="container">
+    <form class="form-horizontal">
+
+        <div class="form-group">
+            <label for="username" class="col-sm-2 control-label">Username:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="username" placeholder="Username" ng-model="user.username">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="firstName" class="col-sm-2 control-label">First Name:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" ng-model="user.firstName">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName" class="col-sm-2 control-label">Last Name:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" ng-model="user.lastName">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="type" class="col-sm-2 control-label">Type:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="type" placeholder="Type" ng-model="user.type">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="type" class="col-sm-2 control-label">Age:</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="age" placeholder="Type" ng-model="user.age">
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 40px">
+            <div class="col-lg-2 col-lg-offset-1">
+                <a class="btn btn-info text-right col-lg-offset-2"
+                        ng-click="addUserDetails(user)">Submit</a>
+            </div>
+            <div class="col-lg-3">
+                <a href="#/users" class="btn btn-info text-right">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>

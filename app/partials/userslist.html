@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="well">
+        <table class="table table-bordered">
+            <tr class="info">
+                <th>Userid</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            <tr class="alert-warning"  ng-repeat="user in appUsers">
+                <td>
+                    <a href="" class="btn btn-danger" ng-click="removeUser(user.username)"
+                            ng-hide="user.username=='shivanik'">x</a>
+                    <a href="#/userdetails/{{ user.username }}" class="btn-link btn-info">{{ user.username}}</a>
+                </td>
+                <td>{{ user.firstName}}</td>
+                <td>{{ user.lastName}}</td>
+            </tr>
+        </table>
+        <a href="#/adduser" class="btn btn-info text-right ">Add User</a>
+    </div>
+    <a href="#/" class="btn btn-info text-right ">Logout</a>
+</div>

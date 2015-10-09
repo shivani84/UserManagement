@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='userManagementApp'>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<header class="page-header">
+    <div class="container text-center">
+        <h3>User Management</h3>
+    </div>
+</header>
+<div class="container" ng-view>
+</div>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="scripts/bootstrap.js"></script>
+<script src="scripts/angular.js"></script>
+<script src="scripts/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="controllers/loginController.js"></script>
+<script src="controllers/usersController.js"></script>
+<script src="controllers/userDetailsController.js"></script>
+<script src="factories/userFactory.js"></script>
+</body>
+</html>
